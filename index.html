@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Punch</title>
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="js/hacker.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="box">
+    <canvas id="canvas" width="100%" height="100%"></canvas>
+    <div class="container" id="fullpage">
+        <div id="page1" class="section active">
+            <img src="img/punchout-pix.png" alt="keep"/>
+        </div>
+        <div id="page2" class="section">
+            <label for="email">请输入邮箱：</label>
+            <input type="text" id="email">
+            <br/>
+            <label for="password">请输入密码：</label>
+            <input type="password" id="password">
+            <br/>
+            <label><input type="radio" value="in" name="punch">签到</label>
+            <label><input type="radio" value="out" name="punch">签退</label>
+            <div>
+                <button id="submit">开始签到/签退</button>
+            </div>
+            <div>
+                <p>状态：</p>
+                <div id="status"></div>
+            </div>
+        </div>
+        <div id="page3" class="section">
+            <p>状态2222：</p>
+            <div id="status"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
